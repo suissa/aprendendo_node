@@ -3,16 +3,16 @@
 // Parte de Conecção com o Mongoose //
 //**********************************//
 
-var mongoose = require('mongoose');
+const mongoose = require('mongoose')
 
-var db = mongoose.connect('mongodb://localhost/node').connection;
+const db = mongoose.connect('mongodb://localhost/node').connection
 
 db.on('open', function() {
-    console.log('Mongoose conectado');
-});
+    console.log('Mongoose conectado')
+})
 
 db.on('error', function() {
-    console.log('Mongoose com erro de Conecção');
-});
+    console.log('Mongoose com erro de Conecção')
+})
 
-return db;
+return db
